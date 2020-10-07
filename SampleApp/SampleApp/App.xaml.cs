@@ -18,10 +18,10 @@ namespace SampleApp
 
         protected override void OnStart()
         {
-            //使用分号隔开多个key
-            AppCenter.Start("ios=ios的secret;" +
-                     "android=android的secret",
-                     typeof(Analytics), typeof(Crashes));
+            ////使用分号隔开多个key
+            //AppCenter.Start("ios=ios的secret;" +
+            //         "android=android的secret",
+            //         typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()

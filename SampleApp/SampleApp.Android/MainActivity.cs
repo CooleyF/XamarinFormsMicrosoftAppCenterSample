@@ -18,6 +18,12 @@ namespace SampleApp.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            AppCenter.LogLevel = LogLevel.Verbose;
+
+            AppCenter.Start("eed2f85f-c0fc-4cfb-88be-fec54da253eb",
+                   typeof(Analytics), typeof(Crashes));
+
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
